@@ -23,3 +23,15 @@ C:\Users\iqbal\source\repos\ContactsPool\ContactsPool\obj\Debug\net6.0\refint\Co
 C:\Users\iqbal\source\repos\ContactsPool\ContactsPool\obj\Debug\net6.0\ContactsPool.pdb
 C:\Users\iqbal\source\repos\ContactsPool\ContactsPool\obj\Debug\net6.0\ContactsPool.genruntimeconfig.cache
 C:\Users\iqbal\source\repos\ContactsPool\ContactsPool\obj\Debug\net6.0\ref\ContactsPool.dll
+C:\Users\iqbal\source\repos\ContactsPool\ContactsPool\bin\Debug\net6.0\libman.json
+C:\Users\iqbal\source\repos\ContactsPool\ContactsPool\bin\Debug\net6.0\ContactsPool.staticwebassets.runtime.json
+C:\Users\iqbal\source\repos\ContactsPool\ContactsPool\obj\Debug\net6.0\ContactsPool.RazorAssemblyInfo.cache
+C:\Users\iqbal\source\repos\ContactsPool\ContactsPool\obj\Debug\net6.0\ContactsPool.RazorAssemblyInfo.cs
+C:\Users\iqbal\source\repos\ContactsPool\ContactsPool\obj\Debug\net6.0\ContactsPool.csproj.AssemblyReference.cache
+C:\Users\iqbal\source\repos\ContactsPool\ContactsPool\bin\Debug\net6.0\Entities.dll
+C:\Users\iqbal\source\repos\ContactsPool\ContactsPool\bin\Debug\net6.0\ServiceContracts.dll
+C:\Users\iqbal\source\repos\ContactsPool\ContactsPool\bin\Debug\net6.0\Services.dll
+C:\Users\iqbal\source\repos\ContactsPool\ContactsPool\bin\Debug\net6.0\Entities.pdb
+C:\Users\iqbal\source\repos\ContactsPool\ContactsPool\bin\Debug\net6.0\ServiceContracts.pdb
+C:\Users\iqbal\source\repos\ContactsPool\ContactsPool\bin\Debug\net6.0\Services.pdb
+C:\Users\iqbal\source\repos\ContactsPool\ContactsPool\obj\Debug\net6.0\ContactsPool.csproj.CopyComplete

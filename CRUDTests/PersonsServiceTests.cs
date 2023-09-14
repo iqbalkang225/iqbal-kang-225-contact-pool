@@ -23,6 +23,14 @@ namespace CRUDTests
             Assert.Throws<ArgumentNullException>(() => _personsService.AddPerson(request));
         }
 
+        [Fact]
+        public void AddPerson_NullPersonName()
+        {
+            PersonAddRequest? request = new PersonAddRequest() { PersonName = null };
+
+            Assert.Throws<ArgumentException>(() => _personsService.AddPerson(request));
+        }
+
         #endregion
     }
 }

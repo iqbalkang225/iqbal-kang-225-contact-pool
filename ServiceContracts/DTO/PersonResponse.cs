@@ -1,6 +1,5 @@
 ﻿using Entities;
 
-
 namespace ServiceContracts.DTO
 {
     public class PersonResponse
@@ -19,7 +18,7 @@ namespace ServiceContracts.DTO
 
         public string? Address { get; set; }
 
-        public bool RecieveNewsletter { get; set; }
+        public bool ReceiveNewsletter { get; set; }
 
         public double? Age {  get; set; }
 
@@ -40,7 +39,7 @@ namespace ServiceContracts.DTO
                 DateOfBirth = person.DateOfBirth,
                 CountryId = person.CountryId,
                 Address = person.Address,
-                RecieveNewsletter = person.RecieveNewsletter,
+                ReceiveNewsletter = person.ReceiveNewsletter,
                 Age = person.DateOfBirth != null 
                       ? Math.Round((DateTime.Now - person.DateOfBirth.Value).TotalDays / 365.25) 
                       : null

@@ -22,6 +22,6 @@ namespace Entities
 
         public string? Address { get; set; }
 
-        public bool RecieveNewsletter {  get; set; }
+        public bool ReceiveNewsletter {  get; set; }
     }
 }

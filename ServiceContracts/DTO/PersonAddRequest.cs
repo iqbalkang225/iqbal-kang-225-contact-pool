@@ -1,14 +1,17 @@
 ﻿using Entities;
 using ServiceContracts.Enums;
 using System;
-
+using System.ComponentModel.DataAnnotations;
 
 namespace ServiceContracts.DTO
 {
     public class PersonAddRequest
     {
+        [Required(ErrorMessage = "person name is required.")]
         public string? PersonName { get; set; }
 
+        [Required(ErrorMessage = "email is required.")]
+        [EmailAddress(ErrorMessage = "email address is not valid.")]
         public string? Email { get; set; }
 
         public GenderOptions? Gender { get; set; }
@@ -19,7 +22,7 @@ namespace ServiceContracts.DTO
 
         public string? Address { get; set; }
 
-        public bool RecieveNewsletter { get; set; }
+        public bool ReceiveNewsletter { get; set; }
 
         public Person ToPerson()
         {
@@ -31,7 +34,7 @@ namespace ServiceContracts.DTO
                 DateOfBirth = DateOfBirth,
                 CountryId = CountryId,
                 Address = Address,
-                RecieveNewsletter = RecieveNewsletter
+                ReceiveNewsletter = ReceiveNewsletter
             };
         }
     }

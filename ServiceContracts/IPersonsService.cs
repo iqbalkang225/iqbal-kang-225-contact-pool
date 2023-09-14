@@ -7,6 +7,10 @@ namespace ServiceContracts
     {
         PersonResponse AddPerson(PersonAddRequest? request);
 
-        List<PersonResponse> GetAllPersons();   
+        List<PersonResponse> GetAllPersons();
+
+        PersonResponse? GetPersonByPersonId(Guid? personId);
+
+        List<PersonResponse> GetFilteredPerson(string searchBy, string? searchString);
     }
 }
