@@ -1,9 +1,9 @@
 ﻿using Entities;
 using ServiceContracts;
 using ServiceContracts.DTO;
+using ServiceContracts.Enums;
 using Services.Helpers;
 using System;
-using System.ComponentModel.DataAnnotations;
 
 namespace Services
 {
@@ -42,6 +42,7 @@ namespace Services
 
             }
         }
+
         public PersonResponse AddPerson(PersonAddRequest? request)
         {
             if (request == null) throw new ArgumentNullException(nameof(request));
@@ -84,38 +85,48 @@ namespace Services
 
             switch(searchBy)
             {
-                case nameof(Person.PersonName):
+                case nameof(PersonResponse.PersonName):
                     filteredPersons = allPersons.Where(temp =>
                     {
-                        return !string.IsNullOrEmpty(temp.PersonName) ? temp.PersonName.Contains(searchString) : true;
+                        return !string.IsNullOrEmpty(temp.PersonName) 
+                        ? temp.PersonName.Contains(searchString, StringComparison.OrdinalIgnoreCase) 
+                        : true;
                     }).ToList();
                     break;
 
-                case nameof(Person.Email):
+                case nameof(PersonResponse.Email):
                     filteredPersons = allPersons.Where(temp =>
                     {
-                        return !string.IsNullOrEmpty(temp.Email) ? temp.Email.Contains(searchString) : true;
+                        return !string.IsNullOrEmpty(temp.Email)
+                        ? temp.Email.Contains(searchString, StringComparison.OrdinalIgnoreCase) 
+                        : true;
                     }).ToList();
                     break;
 
-                case nameof(Person.Address):
+                case nameof(PersonResponse.Address):
                     filteredPersons = allPersons.Where(temp =>
                     {
-                        return !string.IsNullOrEmpty(temp.Address) ? temp.Address.Contains(searchString) : true;
+                        return !string.IsNullOrEmpty(temp.Address) 
+                        ? temp.Address.Contains(searchString, StringComparison.OrdinalIgnoreCase) 
+                        : true;
                     }).ToList();
                     break;
 
-                case nameof(Person.Gender):
+                case nameof(PersonResponse.Gender):
                     filteredPersons = allPersons.Where(temp =>
                     {
-                        return !string.IsNullOrEmpty(temp.Gender) ? temp.Gender.Contains(searchString) : true;
+                        return !string.IsNullOrEmpty(temp.Gender) 
+                        ? temp.Gender.Contains(searchString, StringComparison.OrdinalIgnoreCase) 
+                        : true;
                     }).ToList();
                     break;
 
-                case nameof(Person.DateOfBirth):
+                case nameof(PersonResponse.DateOfBirth):
                     filteredPersons = allPersons.Where(temp =>
                     {
-                        return (temp.DateOfBirth != null) ? temp.DateOfBirth.Value.ToString("dd mm yyyy").Contains(searchString) : true;
+                        return (temp.DateOfBirth != null) 
+                        ? temp.DateOfBirth.Value.ToString("dd mm yyyy").Contains(searchString, StringComparison.OrdinalIgnoreCase) 
+                        : true;
                     }).ToList();
                     break;
 
@@ -131,6 +142,42 @@ namespace Services
             PersonResponse personResponse = person.ToPersonResponse();
             personResponse.Country = _countriesService.GetCountryByCountryId(person.CountryId)?.CountryName;
             return personResponse;
+        }
+
+        public List<PersonResponse> GetSortedPersons(List<PersonResponse> allPersons, string sortBy, SortOrderOptions sortOrder)
+        {
+            if (sortBy == null) return allPersons;
+
+            List<PersonResponse> sortedPersons = (sortBy, sortOrder) switch
+            {
+                (nameof(PersonResponse.PersonName), SortOrderOptions.ASC) => 
+                    allPersons.OrderBy(temp => temp.PersonName, StringComparer.OrdinalIgnoreCase).ToList(),
+
+                (nameof(PersonResponse.PersonName), SortOrderOptions.DESC) =>
+                    allPersons.OrderByDescending(temp => temp.PersonName, StringComparer.OrdinalIgnoreCase).ToList(),
+
+                (nameof(PersonResponse.Email), SortOrderOptions.ASC) =>
+                    allPersons.OrderBy(temp => temp.Email, StringComparer.OrdinalIgnoreCase).ToList(),
+
+                (nameof(PersonResponse.Email), SortOrderOptions.DESC) =>
+                    allPersons.OrderByDescending(temp => temp.Email, StringComparer.OrdinalIgnoreCase).ToList(),
+
+                (nameof(PersonResponse.Country), SortOrderOptions.ASC) =>
+                    allPersons.OrderBy(temp => temp.Country, StringComparer.OrdinalIgnoreCase).ToList(),
+
+                (nameof(PersonResponse.Country), SortOrderOptions.DESC) =>
+                    allPersons.OrderByDescending(temp => temp.Country, StringComparer.OrdinalIgnoreCase).ToList(),
+
+                (nameof(PersonResponse.Gender), SortOrderOptions.ASC) =>
+                    allPersons.OrderBy(temp => temp.Gender, StringComparer.OrdinalIgnoreCase).ToList(),
+
+                (nameof(PersonResponse.Gender), SortOrderOptions.DESC) =>
+                    allPersons.OrderByDescending(temp => temp.Gender, StringComparer.OrdinalIgnoreCase).ToList(),
+
+                _ => allPersons
+            };
+
+            return sortedPersons;
         }
     }
 }
