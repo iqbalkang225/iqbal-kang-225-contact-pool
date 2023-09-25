@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Q+rqMNV3AMnpxIj8rHFmyWKUNCquRNOuye/x6GumQSS6H1/wTMtZw38NQkq4yWJ1L35WGUiZ5b/eCkkoL+q26A==",
+  "dgSpecHash": "pf61vMLCSMfEAdaOPBNe+vtu9pSkhaPk5KYVsjC8C3vLS1triGCSqjqNcbZdgUJ3ftcpK9uajvWftAzkcDCpwg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\iqbal\\source\\repos\\ContactsPool\\Services\\Services.csproj",
+  "projectFilePath": "/Users/iqbal-kang/Projects/contact-pool/Services/Services.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

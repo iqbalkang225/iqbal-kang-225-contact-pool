@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+mUt1o8Z9YFbrA0sHJv7COCUiIYuqpPhi1RheGoCppSeHVsgHbA1atuOIQFHXjUg8jawlmTAchH8UUjUt+1TUA==",
+  "dgSpecHash": "IzzGaEroplD68oO4NLcIw4+ifwcO07Gr087+ao7Ha90pEeElOU9NSO6XfQg9PPBDiIsQ/9ZkdO7WmGDli8YAhA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\iqbal\\source\\repos\\ContactsPool\\ServiceContracts\\ServiceContracts.csproj",
+  "projectFilePath": "/Users/iqbal-kang/Projects/contact-pool/ServiceContracts/ServiceContracts.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

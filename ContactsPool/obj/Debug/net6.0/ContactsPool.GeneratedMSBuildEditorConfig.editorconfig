@@ -9,25 +9,25 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ContactsPool
 build_property.RootNamespace = ContactsPool
-build_property.ProjectDir = C:\Users\iqbal\source\repos\ContactsPool\ContactsPool\
+build_property.ProjectDir = /Users/iqbal-kang/Projects/contact-pool/ContactsPool/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\iqbal\source\repos\ContactsPool\ContactsPool
+build_property.MSBuildProjectDirectory = /Users/iqbal-kang/Projects/contact-pool/ContactsPool
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/iqbal/source/repos/ContactsPool/ContactsPool/Views/Person/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uXEluZGV4LmNzaHRtbA==
+[/Users/iqbal-kang/Projects/contact-pool/ContactsPool/Views/Person/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGVyc29uL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/iqbal/source/repos/ContactsPool/ContactsPool/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+[/Users/iqbal-kang/Projects/contact-pool/ContactsPool/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/iqbal/source/repos/ContactsPool/ContactsPool/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/Users/iqbal-kang/Projects/contact-pool/ContactsPool/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/iqbal/source/repos/ContactsPool/ContactsPool/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[/Users/iqbal-kang/Projects/contact-pool/ContactsPool/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

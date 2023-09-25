@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fvIMXzMqohZ8Fww1Gu3ULKgZI8SYsKXdRsmqP7G246/f5gHwUuh7NWvqVCiHgqf9eFKP4Faq3WAheUzQ2mSRnw==",
+  "dgSpecHash": "78NzTSI/H51Kr34DYfbq53NOUKMa+SJ9gNs8j8H+j+QcYCbTB3l3cgqRW8dcjXuD0CNDy4h0nBBaCmiDwXuJ4g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\iqbal\\source\\repos\\ContactsPool\\Entities\\Entities.csproj",
+  "projectFilePath": "/Users/iqbal-kang/Projects/contact-pool/Entities/Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

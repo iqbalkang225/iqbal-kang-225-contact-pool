@@ -66,40 +66,39 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\iqbal\\.nuget\\packages\\": {}
+    "/Users/iqbal-kang/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\iqbal\\source\\repos\\ContactsPool\\ContactsPool\\ContactsPool.csproj",
+      "projectUniqueName": "/Users/iqbal-kang/Projects/contact-pool/ContactsPool/ContactsPool.csproj",
       "projectName": "ContactsPool",
-      "projectPath": "C:\\Users\\iqbal\\source\\repos\\ContactsPool\\ContactsPool\\ContactsPool.csproj",
-      "packagesPath": "C:\\Users\\iqbal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\iqbal\\source\\repos\\ContactsPool\\ContactsPool\\obj\\",
+      "projectPath": "/Users/iqbal-kang/Projects/contact-pool/ContactsPool/ContactsPool.csproj",
+      "packagesPath": "/Users/iqbal-kang/.nuget/packages/",
+      "outputPath": "/Users/iqbal-kang/Projects/contact-pool/ContactsPool/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\iqbal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/iqbal-kang/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "/usr/local/share/dotnet/sdk/7.0.308/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\iqbal\\source\\repos\\ContactsPool\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\iqbal\\source\\repos\\ContactsPool\\Entities\\Entities.csproj"
+            "/Users/iqbal-kang/Projects/contact-pool/Entities/Entities.csproj": {
+              "projectPath": "/Users/iqbal-kang/Projects/contact-pool/Entities/Entities.csproj"
             },
-            "C:\\Users\\iqbal\\source\\repos\\ContactsPool\\ServiceContracts\\ServiceContracts.csproj": {
-              "projectPath": "C:\\Users\\iqbal\\source\\repos\\ContactsPool\\ServiceContracts\\ServiceContracts.csproj"
+            "/Users/iqbal-kang/Projects/contact-pool/ServiceContracts/ServiceContracts.csproj": {
+              "projectPath": "/Users/iqbal-kang/Projects/contact-pool/ServiceContracts/ServiceContracts.csproj"
             },
-            "C:\\Users\\iqbal\\source\\repos\\ContactsPool\\Services\\Services.csproj": {
-              "projectPath": "C:\\Users\\iqbal\\source\\repos\\ContactsPool\\Services\\Services.csproj"
+            "/Users/iqbal-kang/Projects/contact-pool/Services/Services.csproj": {
+              "projectPath": "/Users/iqbal-kang/Projects/contact-pool/Services/Services.csproj"
             }
           }
         }
@@ -132,7 +131,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.308/RuntimeIdentifierGraph.json"
       }
     }
   }
