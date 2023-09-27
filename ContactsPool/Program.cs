@@ -10,7 +10,7 @@ builder.Services.AddControllersWithViews();
 //Adding services to the IOC container (Dependency Injection)
 builder.Services.AddSingleton<ICountriesService, CountriesService>();
 builder.Services.AddSingleton<IPersonsService, PersonsService>();
-builder.Services.AddDbContext<PersonDbContext>(options => options.UseSqlServer());
+builder.Services.AddDbContext<PersonDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 
