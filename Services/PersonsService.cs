@@ -174,6 +174,30 @@ namespace Services
                 (nameof(PersonResponse.Gender), SortOrderOptions.DESC) =>
                     allPersons.OrderByDescending(temp => temp.Gender, StringComparer.OrdinalIgnoreCase).ToList(),
 
+                (nameof(PersonResponse.Address), SortOrderOptions.ASC) =>
+                    allPersons.OrderBy(temp => temp.Address, StringComparer.OrdinalIgnoreCase).ToList(),
+
+                (nameof(PersonResponse.Address), SortOrderOptions.DESC) =>
+                    allPersons.OrderByDescending(temp => temp.Address, StringComparer.OrdinalIgnoreCase).ToList(),
+
+                (nameof(PersonResponse.ReceiveNewsletter), SortOrderOptions.ASC) =>
+                    allPersons.OrderBy(temp => temp.ReceiveNewsletter).ToList(),
+
+                (nameof(PersonResponse.ReceiveNewsletter), SortOrderOptions.DESC) =>
+                    allPersons.OrderByDescending(temp => temp.ReceiveNewsletter).ToList(),
+
+                (nameof(PersonResponse.Age), SortOrderOptions.ASC) =>
+                    allPersons.OrderBy(temp => temp.Age).ToList(),
+
+                (nameof(PersonResponse.Age), SortOrderOptions.DESC) =>
+                    allPersons.OrderByDescending(temp => temp.Age).ToList(),
+
+                (nameof(PersonResponse.DateOfBirth), SortOrderOptions.ASC) =>
+                    allPersons.OrderBy(temp => temp.DateOfBirth).ToList(),
+
+                (nameof(PersonResponse.DateOfBirth), SortOrderOptions.DESC) =>
+                    allPersons.OrderByDescending(temp => temp.DateOfBirth).ToList(),
+
                 _ => allPersons
             };
 

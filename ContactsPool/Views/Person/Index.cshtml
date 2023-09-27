@@ -39,28 +39,36 @@
 </div>
 
 <table class="table table-striped-columns table-bordered table-dark table-hover table-condensed text-center">
-    <thead class="table-success">
+    <thead class="table-light">
         <tr>
-            @if (ViewBag.CurrentSortBy == nameof(PersonResponse.PersonName) && ViewBag.CurrentSortOrder == nameof(SortOrderOptions.ASC))
-            {
-                <th scope="col">
-                    <a href="~/contacts?searchBy=@ViewBag.CurrentSearchBy&searchString=@ViewBag.CurrentSearchString&sortBy=@nameof(PersonResponse.PersonName)&sortOrder=@nameof(SortOrderOptions.DESC)">Person Name</a>
-                </th>
-            } else
-            {
-                <th scope="col">
-                    <a href="~/contacts?searchBy=@ViewBag.CurrentSearchBy&searchString=@ViewBag.CurrentSearchString&sortBy=@nameof(PersonResponse.PersonName)&sortOrder=@nameof(SortOrderOptions.ASC)">Person Name</a>
-                </th>
+
+            @* Local function to generate VIEW DATA for the Table Header Partial View *@
+            @{
+                ViewDataDictionary GetViewData(string columnType, string columnName)
+                {
+                    return new ViewDataDictionary(ViewData)
+                    {
+                         {"ColumnType", columnType },
+                         {"ColumnName", columnName }
+                    };
+                }
             }
 
-            
-            <th scope="col">Email</th>
-            <th scope="col">Date Of Birth</th>
-            <th scope="col">Age</th>
-            <th scope="col">Gender</th>
-            <th scope="col">Country</th>
-            <th scope="col">Address</th>
-            <th scope="col">Receive Newsletter</th>
+            <Partial name="_TableHeaderLinkPartialView" view-data="@GetViewData(nameof(PersonResponse.PersonName), "Person Name")"></Partial>
+
+            <Partial name="_TableHeaderLinkPartialView" view-data="@GetViewData(nameof(PersonResponse.Email), "Email")"></Partial>
+
+            <Partial name="_TableHeaderLinkPartialView" view-data="@GetViewData(nameof(PersonResponse.DateOfBirth), "Date of Birth")"></Partial>
+
+            <Partial name="_TableHeaderLinkPartialView" view-data="@GetViewData(nameof(PersonResponse.Age), "Age")"></Partial>
+
+            <Partial name="_TableHeaderLinkPartialView" view-data="@GetViewData(nameof(PersonResponse.Gender), "Gender")"></Partial>
+       
+            <Partial name="_TableHeaderLinkPartialView" view-data="@GetViewData(nameof(PersonResponse.Country), "Country")"></Partial>
+      
+            <Partial name="_TableHeaderLinkPartialView" view-data="@GetViewData(nameof(PersonResponse.Address), "Address")"></Partial>
+
+            <Partial name="_TableHeaderLinkPartialView" view-data="@GetViewData(nameof(PersonResponse.ReceiveNewsletter), "Receive Newsletter")"></Partial>
         </tr>
     </thead>
     <tbody>

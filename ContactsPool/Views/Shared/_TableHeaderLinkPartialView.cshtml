@@ -1,0 +1,13 @@
+﻿@if (ViewBag.CurrentSortBy == ViewBag.ColumnType && ViewBag.CurrentSortOrder == nameof(SortOrderOptions.ASC))
+{
+    <th scope="col">
+        <a class="link-success link-underline-opacity-0" href="~/contacts?searchBy=@(ViewBag.CurrentSearchBy)&searchString=@(ViewBag.CurrentSearchString)&sortBy=@(ViewBag.ColumnType)&sortOrder=@nameof(SortOrderOptions.DESC)"> @ViewBag.ColumnName </a>
+    </th>
+}
+else
+{
+    <th scope="col">
+        <a class="link-success link-underline-opacity-0" href="~/contacts?searchBy=@ViewBag.CurrentSearchBy&searchString=@ViewBag.CurrentSearchString&sortBy=@(ViewBag.ColumnType)&sortOrder=@nameof(SortOrderOptions.ASC)"> @ViewBag.ColumnName </a>
+    </th>
+}
+
