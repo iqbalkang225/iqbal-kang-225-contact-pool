@@ -21,3 +21,17 @@ C:/Users/iqbal/source/repos/ContactsPool/Entities/obj/Debug/net6.0/ref/Entities.
 /Users/iqbal-kang/Projects/contact-pool/Entities/obj/Debug/net6.0/refint/Entities.dll
 /Users/iqbal-kang/Projects/contact-pool/Entities/obj/Debug/net6.0/Entities.pdb
 /Users/iqbal-kang/Projects/contact-pool/Entities/obj/Debug/net6.0/ref/Entities.dll
+C:\Users\iqbal\source\repos\ContactsPool\Entities\obj\Debug\net6.0\Entities.csproj.AssemblyReference.cache
+C:\Users\iqbal\source\repos\ContactsPool\Entities\obj\Debug\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\iqbal\source\repos\ContactsPool\Entities\obj\Debug\net6.0\Entities.AssemblyInfoInputs.cache
+C:\Users\iqbal\source\repos\ContactsPool\Entities\obj\Debug\net6.0\Entities.AssemblyInfo.cs
+C:\Users\iqbal\source\repos\ContactsPool\Entities\obj\Debug\net6.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\iqbal\source\repos\ContactsPool\Entities\obj\Debug\net6.0\Entities.dll
+C:\Users\iqbal\source\repos\ContactsPool\Entities\obj\Debug\net6.0\refint\Entities.dll
+C:\Users\iqbal\source\repos\ContactsPool\Entities\obj\Debug\net6.0\Entities.pdb
+C:\Users\iqbal\source\repos\ContactsPool\Entities\bin\Debug\net6.0\Entities.deps.json
+C:\Users\iqbal\source\repos\ContactsPool\Entities\bin\Debug\net6.0\Entities.runtimeconfig.json
+C:\Users\iqbal\source\repos\ContactsPool\Entities\bin\Debug\net6.0\Entities.dll
+C:\Users\iqbal\source\repos\ContactsPool\Entities\bin\Debug\net6.0\Entities.pdb
+C:\Users\iqbal\source\repos\ContactsPool\Entities\obj\Debug\net6.0\Entities.genruntimeconfig.cache
+C:\Users\iqbal\source\repos\ContactsPool\Entities\obj\Debug\net6.0\ref\Entities.dll

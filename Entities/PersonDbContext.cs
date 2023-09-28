@@ -8,12 +8,19 @@ namespace Entities
 		public DbSet<Person> Persons { get; set; }
 		public DbSet<Country> Countries { get; set; }
 
+        public PersonDbContext(DbContextOptions options) : base(options) { }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<Person>().ToTable("Persons");
             modelBuilder.Entity<Country>().ToTable("Countries");
+
+            modelBuilder.Entity<Person>().Property(temp => temp.TIN)
+                .HasColumnName("TaxIdentificationNumer")
+                .HasColumnType("varchar(8)")
+                .HasDefaultValue("12345678");
 
             //seed data - Country
             string countriesJSON = System.IO.File.ReadAllText("countries.json");
@@ -26,7 +33,8 @@ namespace Entities
             List<Person> persons = System.Text.Json.JsonSerializer.Deserialize<List<Person>>(personsJSON);
 
             foreach(Person person in persons)
-                modelbuilder.Entity<Person>().HasData(person);
+                modelBuilder.Entity<Person>().HasData(person);
+
         }
     }
 

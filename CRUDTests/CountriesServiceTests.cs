@@ -9,10 +9,10 @@ namespace CRUDTests
     {
         private readonly ICountriesService _countriesService;
 
-        public CountriesServiceTests()
-        {
-            _countriesService = new CountriesService();
-        }
+        //public CountriesServiceTests()
+        //{
+        //    _countriesService = new CountriesService();
+        //}
 
         #region AddCountry
         

@@ -10,7 +10,7 @@ namespace CRUDTests
         private readonly IPersonsService _personsService;
         public PersonsServiceTests()
         {
-            _personsService = new PersonsService();
+            //_personsService = new PersonsService();
         }
 
         #region AddPerson
